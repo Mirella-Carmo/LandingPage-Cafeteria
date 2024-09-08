@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+/*tela de navegação e logo*/
+
+.content {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    background-color:  transparent;
+    position: fixed ;
+    padding-left: 50px;
+    z-index: 1;
+
+
+}
+
+.logo {
+   width: 70px;
+   height: auto;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   padding-left: 20px;
+
+}
+
+.logo h3{
+   color: white;
+   font-size: 20px;
+   padding-left: 20px;
+   white-space: nowrap;
+
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.content .menunav{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-left: 400px;
+     padding-top: 20px;
+     font-weight: bold;
+}
+
+.content .menunav li a {
+    padding: 5rem 2rem 2rem 1rem ;
+     color: white;
+     font-size: 20px;
+     text-transform: uppercase; /*o conteudo vai estar em maiusculo*/
+     transition: all 200ms ease-in ;
+     text-decoration: none;
+
+}
+
+.content .menunav li a:hover {
+    background-color: #3333;
+    color: #f98e03;
+
+}
+
+/*conteudo principal (imagem e descrição)*/
+
+.telaprincipal .imagemdescricao img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.imagemdescricao h1 {
+    position: relative;
+    bottom: 340px;
+    left: 200px;
+    color: white;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.imagemdescricao h3 {
+    position: relative;
+    bottom: 300px;
+    left: 190px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Playfair', sans-serif;
+}
