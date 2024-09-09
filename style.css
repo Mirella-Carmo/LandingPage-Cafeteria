@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+body{
+    background-color: rgb(250, 236, 218);
+    overflow-x: hidden; /*evitar que a pagina fique 'sobrando' para a direita*/
+}
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +19,7 @@
     height: 60px;
     display: flex;
     flex-direction: row;
-    background-color:  transparent;
+    background-color: transparent;
     position: fixed ;
     padding-left: 50px;
     z-index: 1;
@@ -48,7 +53,7 @@
 
 .content .menunav{
      display: flex;
-     align-items: center;
+     align-items: center; /*alinhamento vertical*/
      justify-content: space-between;
      padding-left: 400px;
      padding-top: 20px;
@@ -57,18 +62,17 @@
 
 .content .menunav li a {
     padding: 5rem 2rem 2rem 1rem ;
-     color: white;
-     font-size: 20px;
-     text-transform: uppercase; /*o conteudo vai estar em maiusculo*/
-     transition: all 200ms ease-in ;
-     text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase; /*o conteudo vai estar em maiusculo*/
+    transition: all 200ms ease-in ;
+    text-decoration: none;
 
 }
 
 .content .menunav li a:hover {
     background-color: #3333;
     color: #f98e03;
-
 }
 
 /*conteudo principal (imagem e descrição)*/
@@ -97,4 +101,235 @@
     color: white;
     font-size: 25px;
     font-family: 'Playfair', sans-serif;
+}
+
+/*cardapio*/
+
+.cardapio { /*preparar pra colocar o conteudo em linha horizontal*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cardapio .itens-cardapio {
+    background-color: transparent;
+    max-width: 300px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cardapio h2 {
+    position: relative;
+    bottom: 40px;
+    font-size: 60px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 100px;
+    color: rgb(73, 26, 4);   
+}
+
+.cardapio .itens-cardapio img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.cardapio .itens-cardapio h3 {
+    font-size: 30px;
+    font-family: 'Playfair', sans-serif;
+    color: rgb(33, 33, 33);
+}
+
+/*Espaço de leitura*/
+
+.leitura {
+    max-width: 80%;
+    margin-left: 100px;
+    top: 200px;
+    position: relative;
+}
+
+.leitura h1 {
+    display: flex;
+    justify-content: flex-end;
+    bottom: 400px;
+    position: relative;
+    font-size: 50px;
+    font-family: 'Playfair', sans-serif;
+    left: 120px;
+    color: rgb(72, 32, 12);
+}
+
+.leitura h3 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 340px;
+    font-size: 20px;
+    left: 100px;
+    font-family: 'Playfair', sans-serif;
+    color: rgb(58, 28, 13);
+}
+
+/*Localização*/
+.localizacao img{
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+    margin-left: 100px;
+    top: 200px;
+    position: relative;
+}
+
+.localizacao h1 {
+    font-size: 60px;
+    position: relative;
+    bottom: 550px;
+    margin-left: 100px;
+    color: rgb(58, 28, 13);
+}
+
+.localizacao h3 {
+    font-size: 40px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 220px;
+    bottom: 400px;
+    color: rgb(94, 44, 5);
+}
+
+.localizacao p {
+    font-size: 25px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 220px;
+    bottom: 300px;
+    color: rgb(94, 44, 5);
+    font-family: 'Playfair', sans-serif;
+}
+
+/*Sobre nós*/
+
+.sobre img {
+    width: 80%;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 200px;
+    filter: brightness(40%);
+    position: absolute;
+    border-radius: 30px;
+}
+
+.sobre h1 {
+    font-size: 80px;
+    color: rgb(254, 165, 126);
+    position: relative;
+    z-index: 1;
+    top: 300px;
+    margin-left: 250px;
+}
+
+.sobre p {
+    font-size: 20px;
+    color: rgb(250, 206, 189);
+    position: relative;
+    z-index: 1;
+    top: 400px;
+    margin-left: 250px;
+    line-height: 30px
+}
+
+.sobre h2 {
+    font-size: 60px;
+    color: rgb(58, 28, 13);
+    position: relative;
+    top: 150px;
+    margin-left: 100px;
+    font-family: 'Playfair', sans-serif;
+}
+
+/*rodape*/
+footer {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 500px;
+    background-color: rgb(61, 23, 11);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 200px;
+}
+
+.cafeteria h1 {
+    font-size: 25px;
+    margin-left: 300px;
+    color: bisque;
+    font-family: 'Playfair', sans-serif;
+    margin-top: 50px;
+}
+
+.cafeteria p {
+    margin-left: 300px;
+    font-size: 15px;
+    color: rgb(251, 211, 162);
+    margin-top: 8px;
+}
+
+.contato  h1{
+    font-size: 25px;
+    margin-left: 200px;
+    color: bisque;
+    font-family: 'Playfair', sans-serif;
+    margin-top: 50px;
+}
+
+.contato p {
+    margin-left: 200px;
+    font-size: 15px;
+    color: rgb(251, 211, 162);
+    margin-top: 8px;
+}
+
+.rede h1 {
+    font-size: 25px;
+    color: bisque;
+    margin-left: 200px;
+    font-family: 'Playfair', sans-serif;
+    margin-top: 50px;
+}
+
+.rede img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.intagram p {
+    margin-left: 250px;
+    font-size: 15px;
+    color: rgb(251, 211, 162);
+    position: relative;
+    bottom: 30px;
+}
+
+.facebook img {
+    bottom: 15px;
+    position: relative;
+}
+
+.facebook p {
+    margin-left: 250px;
+    font-size: 15px;
+    color: rgb(251, 211, 162);
+    position: relative;
+    bottom: 40px;
 }
