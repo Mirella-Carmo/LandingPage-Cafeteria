@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Playwrite+CU:wght@100..400&family=Sevillana&display=swap');
 
 body{
     background-color: rgb(250, 236, 218);
@@ -8,8 +9,7 @@ body{
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
 
 /*tela de navegação e logo*/
@@ -38,11 +38,10 @@ body{
 }
 
 .logo h3{
-   color: white;
+   color: beige;
    font-size: 20px;
    padding-left: 20px;
    white-space: nowrap;
-
 }
 
 .logo img {
@@ -58,12 +57,13 @@ body{
      padding-left: 400px;
      padding-top: 20px;
      font-weight: bold;
+
 }
 
 .content .menunav li a {
     padding: 5rem 2rem 2rem 1rem ;
-    color: white;
-    font-size: 20px;
+    color: beige;
+    font-size: 25px;
     text-transform: uppercase; /*o conteudo vai estar em maiusculo*/
     transition: all 200ms ease-in ;
     text-decoration: none;
@@ -88,9 +88,9 @@ body{
     position: relative;
     bottom: 340px;
     left: 200px;
-    color: white;
-    font-size: 60px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 176, 130);
+    font-size: 80px;
+    font-family: 'Merienda', sans-serif;
     
 }
 
@@ -98,9 +98,11 @@ body{
     position: relative;
     bottom: 300px;
     left: 190px;
-    color: white;
+    color: rgb(255, 206, 177);
     font-size: 25px;
-    font-family: 'Playfair', sans-serif;
+    font-family: 'Merienda', sans-serif;
+
+
 }
 
 /*cardapio*/
@@ -124,11 +126,12 @@ body{
 .cardapio h2 {
     position: relative;
     bottom: 40px;
-    font-size: 60px;
+    font-size: 80px;
     display: flex;
     justify-content: flex-end;
     padding: 100px;
     color: rgb(73, 26, 4);   
+    font-family: 'Nerko One', sans-serif;
 }
 
 .cardapio .itens-cardapio img {
@@ -139,9 +142,9 @@ body{
 }
 
 .cardapio .itens-cardapio h3 {
-    font-size: 30px;
-    font-family: 'Playfair', sans-serif;
-    color: rgb(33, 33, 33);
+    font-size: 40px;
+    font-family: 'Nerko One', sans-serif;
+    color: rgb(99, 46, 26);
 }
 
 /*Espaço de leitura*/
@@ -156,11 +159,11 @@ body{
 .leitura h1 {
     display: flex;
     justify-content: flex-end;
-    bottom: 400px;
+    bottom: 450px;
     position: relative;
-    font-size: 50px;
-    font-family: 'Playfair', sans-serif;
-    left: 120px;
+    font-size: 55px;
+    font-family: 'Nerko One', sans-serif;
+    left: 150px;
     color: rgb(72, 32, 12);
 }
 
@@ -168,11 +171,11 @@ body{
     display: flex;
     justify-content: flex-end;
     position: relative;
-    bottom: 340px;
-    font-size: 20px;
-    left: 100px;
-    font-family: 'Playfair', sans-serif;
-    color: rgb(58, 28, 13);
+    bottom: 400px;
+    font-size: 30px;
+    left: 130px;
+    font-family: 'Nerko One', sans-serif;
+    color: rgb(136, 62, 25);
 }
 
 /*Localização*/
@@ -186,15 +189,17 @@ body{
 }
 
 .localizacao h1 {
-    font-size: 60px;
+    font-size: 80px;
     position: relative;
     bottom: 550px;
     margin-left: 100px;
-    color: rgb(58, 28, 13);
+    color: rgb(95, 47, 22);
+    font-family: 'Nerko One', sans-serif;
 }
 
 .localizacao h3 {
-    font-size: 40px;
+    font-size: 50px;
+    font-family: 'Nerko One', sans-serif;
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -204,14 +209,14 @@ body{
 }
 
 .localizacao p {
-    font-size: 25px;
+    font-size: 35px;
     position: relative;
     display: flex;
     justify-content: flex-end;
     margin-right: 220px;
     bottom: 300px;
-    color: rgb(94, 44, 5);
-    font-family: 'Playfair', sans-serif;
+    color: rgb(117, 53, 4);
+    font-family: 'Nerko One', sans-serif;
 }
 
 /*Sobre nós*/
@@ -233,6 +238,7 @@ body{
     z-index: 1;
     top: 300px;
     margin-left: 250px;
+    font-family: 'Merienda', sans-serif;
 }
 
 .sobre p {
@@ -242,22 +248,21 @@ body{
     z-index: 1;
     top: 400px;
     margin-left: 250px;
-    line-height: 30px
+    line-height: 30px;
 }
 
 .sobre h2 {
-    font-size: 60px;
-    color: rgb(58, 28, 13);
+    font-size: 80px;
+    color: rgb(105, 53, 26);
     position: relative;
     top: 150px;
     margin-left: 100px;
-    font-family: 'Playfair', sans-serif;
-}
+    font-family: 'Nerko One', sans-serif;}
 
 /*rodape*/
 footer {
     width: 100%;
-    height: 200px;
+    height: auto;
     position: relative;
     top: 500px;
     background-color: rgb(61, 23, 11);
@@ -265,13 +270,13 @@ footer {
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 200px;
+    font-family: 'Merienda', sans-serif;
 }
 
 .cafeteria h1 {
     font-size: 25px;
     margin-left: 300px;
     color: bisque;
-    font-family: 'Playfair', sans-serif;
     margin-top: 50px;
 }
 
@@ -286,7 +291,6 @@ footer {
     font-size: 25px;
     margin-left: 200px;
     color: bisque;
-    font-family: 'Playfair', sans-serif;
     margin-top: 50px;
 }
 
@@ -301,7 +305,6 @@ footer {
     font-size: 25px;
     color: bisque;
     margin-left: 200px;
-    font-family: 'Playfair', sans-serif;
     margin-top: 50px;
 }
 
